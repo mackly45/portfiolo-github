@@ -1,0 +1,168 @@
+/* Style de la police */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  /* Style de la barre de navigation */
+  .navbar {
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #333;
+  }
+  
+  .nav-item {
+    margin-right: 1rem;
+  }
+  
+  .nav-link {
+    font-weight: bold;
+    color: #333;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .nav-link:hover {
+    color: #007bff;
+  }
+  
+  /* Style de l'image de fond */
+  .bg-image {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+  }
+  
+  .bg-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: zoom-in 10s ease-in-out;
+  }
+  
+  @keyframes zoom-in {
+    from {
+      transform: scale(1.1);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  
+  .bg-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+  }
+  
+  .bg-text h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    animation: fade-in-down 2s ease-in-out;
+  }
+  
+  .bg-text p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    animation: fade-in-up 2s ease-in-out;
+  }
+  
+  @keyframes fade-in-down {
+    from {
+      opacity: 0;
+      transform: translate3d(0, -100%, 0);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  
+  /* Style de la description de l'entreprise */
+  .container h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
+    animation: fade-in-down 2s ease-in-out;
+  }
+  
+  /* Style de la sélection de produits */
+  .card {
+    border: none;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .card-img-top {
+    object-fit: cover;
+    height: 250px;
+  }
+  
+  .card-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  .card-text {
+    margin-bottom: 1rem;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+  }
+  
+  .btn-lg {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: 0.3rem;
+  }
+  
+  /* Style du pied de page */
+  footer {
+    background-color: #f5f5f5;
+    padding: 2rem 0;
+    text-align: center;
+    font-size: 0.8rem;
+  }
+  
+  footer p {
+    margin-bottom: 0;
+  }
+  
